@@ -1,0 +1,44 @@
+.pagination {
+    display: flex;
+
+    li {
+        a {
+            display: block;
+            width: 35px;
+            height: 35px;
+            border: 1px solid #fe5f1e;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.1s linear;
+            margin-right: 5px;
+            text-align: center;
+            line-height: 35px;
+            color: #fe5f1e;
+
+            &:hover {
+                color: #fff;
+                background-color: #fe5f1e;
+            }
+
+        }
+
+        &.selected {
+            a {
+                transition: all 0.1s linear;
+                color: #fff;
+                background-color: #fe5f1e;
+            }
+        }
+
+        &.disabled {
+            a {
+                transition: all 0.1s linear;
+                color: #eee;
+                background-color: #ccc;
+                cursor: default;
+                border-color: #eee;
+            }
+        }
+
+    }
+}
